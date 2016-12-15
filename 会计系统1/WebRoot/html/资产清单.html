@@ -1,0 +1,66 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<style type="text/css">
+<!--
+.STYLE1 {
+	font-size: 16px;
+	font-weight: bold;
+}
+.STYLE2 {font-size: 13px}
+-->
+</style>
+<script src='../js/jquery-1.4.2.js'></script>
+<script>
+	
+	$(document).ready(function(){  
+		$.getJSON("../zcqd?method=index", function(json){
+			var i=0;
+			while(json[i]){
+				var trdate = json[i];
+				$("#date").append('<tr><td>A0001</td><td>电脑</td><td>1</td><td>4999.00</td></tr>'); 
+				i++;
+			}
+		}); 
+	});
+		
+	
+</script>
+
+
+
+</head>
+
+<body>
+<table width="494" border="0" cellspacing="0">
+  <tr>
+    <td><div align="center" class="STYLE1">资产清单</div></td>
+  </tr>
+  <tr>
+    <td><div align="center" class="STYLE2">2016年11月</div></td>
+  </tr>
+</table>
+<table width="494" border="1" cellspacing="0" id='data'>
+  <tr>
+    <td width="97"><div align="center" class="STYLE2">资产编号</div></td>
+    <td width="167"><div align="center" class="STYLE2">名称</div></td>
+    <td width="92"><div align="center" class="STYLE2">数量</div></td>
+    <td width="110"><div align="center" class="STYLE2">价格</div></td>
+  </tr>
+  <tr>
+    <td>A0001</td>
+    <td>电脑</td>
+    <td>1</td>
+    <td>4999.00</td>
+  </tr>
+  <tr>
+    <td>A0002</td>
+    <td>办公桌</td>
+    <td>4</td>
+    <td>1500.00</td>
+  </tr>
+</table>
+</body>
+</html>

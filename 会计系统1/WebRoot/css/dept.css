@@ -1,0 +1,20 @@
+.kind_header,.kind_body{
+	height: 40px;
+	line-height: 40px;
+}
+.kind_header li,.kind_body li{
+	float: left;
+	list-style: none;
+	padding: 0 10px; 
+	width: 100px;
+}
+.kind_header:after,.kind_body:after{
+
+	clear: both;
+}
+.kind_body li:first-child,.kind_header li:first-child{
+	width:100px;
+}
+.kind_body li input[type=text]{
+	width: 100px;
+}

@@ -1,0 +1,23 @@
+.kind_header li,.kind_body li{
+	list-style: none;
+	float: left;
+	height:30px;
+	line-height: 30px;
+	width:150px;
+	text-align: center;
+	border:1px solid #eee;
+}
+.kind_header:after{
+	content:'';
+	clear: both;
+}
+.kind_body{
+	content: '';
+	clear: both;
+}
+.kind_header,.kind_body{
+	height:30px;
+}
+.kind_body{
+	font-size: 14px;
+}

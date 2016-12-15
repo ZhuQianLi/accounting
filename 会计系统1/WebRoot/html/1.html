@@ -1,0 +1,30 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>divtest</title>
+<style type="text/css">
+	#test2 p{
+		color:green;
+		width:100px;
+	}
+    .ss[id=test1] p:nth-child(2){color:red;}
+   #i1{
+   		border:solid 1px red;
+		width:200px;
+   }
+	
+</style>
+<body>
+	<div id="test1" class="ss">
+	    <p>P One</p>
+	    <p>P Two</p>
+	</div>
+	<div id="test2" class="ss">
+	    <span>Span Test</span>
+	    <p>P One</p>
+	    <p id="i1">P Two</p>
+	</div>
+	</body>
+</html>

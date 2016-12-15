@@ -1,0 +1,38 @@
+
+aside,main{
+	margin-top:40px; 
+	float: left;
+}
+.side_menu>div{
+	width: 200px;
+	height: 30px;
+	border: 1px solid #3366ff;
+	border-bottom: none; 
+	line-height: 30px;
+	text-align: center;
+	background: #3366dd;
+	cursor: pointer;
+}
+
+.side_menu ul{
+	width: 202px;
+	text-align: center;
+	height: 0px;
+	overflow: hidden;
+	font-size: 14px
+}
+.side_menu ul a{
+	text-decoration:none;
+}
+.side_menu ul a:hover li{
+	background: #3366ee;
+	color:#fff;
+}
+.side_menu ul li{
+	line-height: 30px;
+	height: 30px;
+	width: 200px;
+	border: 1px solid #eee;
+	list-style: ;
+	background: #fff;
+}

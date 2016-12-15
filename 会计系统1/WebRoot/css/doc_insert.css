@@ -1,0 +1,11 @@
+.doc_header > div{
+	float: left;
+}
+.doc_header:after{
+	content:'';
+	clear:both;
+}
+.doc_option{
+	content:'';
+	clear:both;
+} 

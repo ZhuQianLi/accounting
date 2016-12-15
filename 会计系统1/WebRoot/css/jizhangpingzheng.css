@@ -1,0 +1,147 @@
+.doc{
+	width:838px
+}
+.r1{
+	width:838px;
+	text-align:center;
+	font-size:20px;
+}
+.r2{
+	width:419px;
+	float:left;
+	text-align:center;
+	margin-top:10px;
+	margin-bottom: 10px;
+}
+.r2>input{
+	width:200px;
+}
+.table{
+	float:left;
+	width:838px;
+	padding:0px;
+	margin-top:0px;
+	margin-bottom:0px;
+	border-top: #00AA00 1px solid;
+	border-left: #00AA00 1px solid;
+	display:table-row-group;
+	
+}
+.table li{
+	float: left;
+	list-style-type: none;
+	border-right:#00AA00 1px solid;
+	border-bottom: #00AA00 1px solid;
+	text-align:center;
+}
+.zhaiyao{
+	width:130px;
+	height:50px;
+	text-align:center;
+	line-height:50px;
+}
+.jiesuanfangshi{
+	width:45px;
+	height:50px;
+	line-height:25px;
+}
+.piaohao{
+	width:65px;
+	height:50px;
+	line-height:50px;
+}
+.kuaijikemu{
+	width:200px;
+	height:25px;
+	line-height:25px;
+}
+.jiefangjine,.daifangjine{
+	width:165px;
+	height:25px;
+	line-height:25px;
+}
+.jizhang1,.jizhang2{
+	width:30px;
+	height:25px;
+	font-size:12px;
+	line-height:25px;
+}
+.zongzhangkemu,.mingxikemu{
+	width:99.5px;
+	height:24px;
+	line-height:24px;
+}
+.fuhao{
+	width:30px;
+	height:24px;
+	font-size:12px;
+	line-height:24px;
+}
+.jine{
+	width:14.07px;
+	height:24px;
+	line-height:24px;
+	font-size:14px;
+}
+.table[name=model]{
+	margin-top:0px;
+	border-top:none;
+}
+.table[name=model] input{
+	margin:0px;
+	padding:0px;
+	height:95%;
+	width:95%;
+	border:none;
+	text-align:center;
+}
+.table[name=model] li{
+	height:35px;
+	line-height:35px;
+}
+#table2{
+	margin-bottom: 10px;
+}
+
+#table2 input:not(.indanju){
+	margin:0px;
+	padding:0px;
+	height:95%;
+	width:95%;
+	border: 0px;
+	text-align: center;
+}
+.indanju{
+	margin:0px;
+	padding:0px;
+	height:40px;
+	width:auto;
+	border: 0px;
+	text-align: center;
+	line-height: 50px;
+
+}
+#table2 li{
+	height: 50px;
+	line-height: 50px;
+}
+
+.danju{
+	width:242px;
+}
+.heji{
+	width:200px;
+}
+.lastrow{
+	margin-top: 30px;
+	text-align: center;
+}
+.lastrow input{
+	width:86px;
+	border: 0px;
+}
+.operation{
+	margin-top:131px;
+	margin-bottom: 1px;
+}
+input{	outline:medium;}

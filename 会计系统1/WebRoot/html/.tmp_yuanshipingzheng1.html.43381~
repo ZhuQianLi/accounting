@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+	<title>费用报销单</title>
+	<link rel="stylesheet" type="text/css" href="../css/common.css">
+	<link rel="stylesheet" type="text/css" href="../css/acc_doc.css">
+</head>
+
+<body>
+	<form action="accountdocument?method=insert" method="post">
+		<div class="doc">
+			<div class="title">费用报销单</div>
+			<div class="one_row">	
+				<div class="name">姓名:<input type="text" name="username" value=""></div>
+				<div class="dept">部门:<input type="text" name="dept" value=""></div>
+				<div class="change">
+					转账方式:
+					<select name="OD_TrW">
+						<option>现金</option>
+						<option>支票</option>
+						<option>网上转账</option>
+						<option>银行转账</option>	
+					</select>
+				</div>
+				<div>用途:<input type="text" name="OD_UsW" value=""></div>
+			</div>
+
+			
+			<div class="detail">
+				<ul>
+					<li>选择</li>
+					<li>名称(长度1-20)</li>
+					<li>单价&yen;(长度1-10保留两位小数)</li>
+					<li>数量(长度1-10保留两位小数)</li>
+				</ul>
+
+				<ul class="doc_item_modul">
+					<li><input type="checkbox" name=""></li>
+					<li><input type="text" name="OD_ItNa"></li>
+					<li><input type="text" name="OD_ItPr"></li>
+					<li><input type="text" name="OD_ItNu"></li>
+				</ul>
+
+				
+
+			</div>
+			<input type="button" id="insert_btn" value="增加">
+			<input type="button"  id="del_btn" value="删除">
+			<div class="ms">
+				<div>摘要说明:</div>
+				<textarea name="OD_Desc" id="" cols="30" rows="10" placeholder="请输入其他摘要说明.."></textarea>
+
+			</div>
+			<div>总金额：&yen;<input type="text" name="OD_Sum" value="700" id="sum"></div>
+			
+			<input type="submit" value="提交">
+		</div>
+	</form>
+	
+</body>
+	<script src="../js/jquery-1.4.2.js"></script>
+	<script type="text/javascript" src="../js/doc.js"></script>
+	<script src="../js/yuanshipingzheng1.js"></script>
+</html>

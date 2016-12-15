@@ -1,0 +1,19 @@
+.kind_header>li,.kind_body>li,.kind_modul li{
+	width:130px;
+	border: 1px solid #eee;
+	text-align: center;
+	height: 30px;
+	line-height: 30px;
+	float: left;
+}
+.kind_header,.kind_body,.kind_modul{
+	height:32px;
+}
+
+input[type=text]{
+	width:100px;
+}
+.kind_modul{ display: none }
+.ok{
+	background: #f00;
+}

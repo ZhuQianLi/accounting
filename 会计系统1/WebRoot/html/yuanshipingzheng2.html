@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+	<title>全国通用的增值税专用发票</title>
+	<script language="JavaScript" src="../js/jquery-1.4.2.js"></script>
+	<script language="JavaScript" src="../js/yuanshipingzheng2.js"></script>
+	<style type=text/css>
+		.title {
+			text-align: center;
+			width: 925px;
+			height:50px;
+		}
+		table input{
+			width:99%;
+		}
+	
+		
+		
+		
+	</style>
+	
+</head>
+
+<body>
+	<form action="dasd" method="post">
+		<div class="title">全国通用的增值税专用发票</div>
+		<div style="margin-bottom: 25px;">
+			<div style="float:left">开票日期：<input type="text" name="pz_date"></div>
+			<div style="float:left;margin-left:505px" >凭证编号：<input type="text" name="pz_id"></div>
+		</div>
+		<table border="0px" width="1000px">
+			<tr>
+				<td rowspan="2" width=110>购货单位</td>
+				<td width=110>名称</td>
+				<td colspan="3" width=330><input type="text" name="gh_name"></td>
+				<td width=150>纳税人登记号</td>
+				<td colspan="3" width=330><input type="text" name="gh_nashuiren_id"></td>
+				<tr>
+					<td>地址电话</td>
+					<td colspan="3"><input type="text" name="gh_addressAndPhone"></td>
+					<td>开户银行及帐号</td>
+					<td colspan="3"><input type="text" name="gh_bankAndLoginName"></td>
+				</tr>	
+			</tr>
+			<tr>
+				<td colspan="2">商品或应税劳务名称</td>
+				<td>计量单位</td>
+				<td>数量</td>
+				<td>单价</td>
+				<td>金额(元)</td>
+				<td>税率(%)</td>
+				<td>税额</td>
+				<td><div style="width:90px;">操作</div></td>
+			</tr>
+			<!-- -->
+			<tr name="model" hidden>
+				<td colspan="2"><input type="text" name="goods_name"></td>
+				<td><input type="text" name="jiliang"></td>
+				<td><input type="text" name="shuliang"></td>
+				<td><input type="text" name="danjia"></td>
+				<td><input type="text" name="jine"></td>
+				<td><input type="text" name="shuilv"></td>
+				<td><input type="text" name="shuie"></td>
+				<td>
+					<button style="width:45px;float:left" name="submitTR">确认</button>
+					<button style="width:45px;float:left" name="editTR" hidden>编辑</button>
+					<button style="width:45px;float:left" name="deleteTR">删除</button>
+				</td>
+			</tr>
+			
+			
+			<tr>	
+				<td colspan="9" align="center">
+					<button id="addTR" style="width:90px;">添加一行</button>
+				</td>	
+				
+			<tr>
+			<!-- -->
+			<tr>
+				<td colspan="2">合计</td>
+				<td><input type="text"></td>
+				<td><input type="text"></td>
+				<td><input type="text"></td>
+				<td><input type="text"></td>
+				<td><input type="text"></td>
+				<td><input type="text"></td>
+			</tr>
+			<tr>
+				<td colspan="2">价税合计(大写)</td>
+				<td colspan="7"><input type="text" class="colspan7"></td>
+			</tr>			
+			<tr>
+				<td rowspan="2">销售单位</td>
+				<td>名称</td>
+				<td colspan="3"><input type="text" class="colspan3" name="xs_name"></td>
+				<td>纳税人登记号</td>
+				<td colspan="3"><input type="text" class="colspan3" name="xs_nashuiren"></td>
+			</tr>
+			<tr>
+				<td>地址电话</td>
+				<td colspan="3"><input type="text" class="colspan3" name="xs_phoneAndAddress"></td>
+				<td>开户银行及帐号</td>
+				<td colspan="3"><input type="text" class="colspan3" name="xs_bankAndLoginName"></td>
+			</tr>
+			<tr>
+				<td colspan="2">备注</td>
+				<td colspan="7"><input type="text" class="colspan7" name="beizhu"></td>
+			</tr>
+		</table>
+		<div style="margin-top: 5px;">
+			<div style="float:left">收款人：<input type="text" name="shouguanren"></div>
+			<div style="float:left;margin-left:520px" >开票单位：<input type="text" name="kaipiaodanwei"></div>
+		</div>
+		<div style="width:1000px" align="center">
+			<input type="submit" style="width:90px">
+		</div>
+	</form>
+	
+</body>
+	
+</html>

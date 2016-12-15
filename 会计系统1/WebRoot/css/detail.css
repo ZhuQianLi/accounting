@@ -1,0 +1,27 @@
+.detail>div{
+	padding: 10px;
+}
+.detail{
+	width: 600px;
+}
+
+.kind_header li,.kind_body li{
+	float: left;
+	width: 130px;
+	font-size: 14px;
+	text-align: center;
+	height: 20px;
+	line-height: 20px;
+	border: 1px solid #eee;
+}
+.kind_header li:first-child,.kind_body li:first-child{
+	width: 50px;
+}
+
+.kind_header,.kind_body{
+	height:22px;
+}
+
+.state{
+	color: red;
+}

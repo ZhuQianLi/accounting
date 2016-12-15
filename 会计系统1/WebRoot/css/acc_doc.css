@@ -1,0 +1,52 @@
+.doc>div{
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.doc{
+	border: 2px solid #aaa;
+	width: 750px;
+}
+.name{
+	float: left;
+}
+.name input{
+	width: 115px;
+}
+.dept{
+	float: left;
+}
+.change{
+	float: left;
+}
+.detail>ul>li{
+	float: left;
+	list-style: none;
+	width: 220px;
+	height: 30px;
+	line-height: 30px;
+	border: 1px solid #eee;
+	text-align: center;
+	font-size: 14px;
+}
+
+.detail>ul>li:first-child{
+	width: 40px;
+}
+.detail>ul{
+	height:30px;
+	clear: both;
+}
+.ms{
+	clear: both;
+}
+.ms>div:first-child{
+	float: left;
+}
+.title,.detail{
+	margin: 0 auto;
+	display: table;
+}
+
+.doc_item_modul{
+	display: none;
+}

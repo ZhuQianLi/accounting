@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>yspzType.html</title>
+	
+    <meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+    <meta http-equiv="description" content="this is my page">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    
+    <!--<link rel="stylesheet" type="text/css" href="./styles.css">-->
+	<link rel="stylesheet" type="text/css" href="../css/yspzType.css">
+	<script language="JavaScript">
+		window.onload = function(){
+			var chooses = document.getElementsByClassName("choose");
+			for(var i=0;i<chooses.length;i++){
+				chooses[i].onclick = function(){
+					var ul = this.parentNode.parentNode;
+					var lis = ul.getElementsByTagName("li");
+					var value_hidden = ul.getElementsByTagName("input")[0].value; 
+					window.opener.document.getElementById("div1").innerText=lis[0].firstChild.nodeValue+"-"+lis[1].firstChild.nodeValue;
+					window.opener.document.getElementById("yspzFrame").src=value_hidden;
+					window.close();
+				}
+			}
+		}
+	</script>
+  </head>
+  
+  <body>
+  		<ul class="kind_header">
+			<li>原始凭证种类</li>
+			<li>原始凭证</li>
+			<li>操作</li>
+		</ul>	
+		<ul class="kind_body">
+			<li>通用原始凭证</li>
+			<li>费用报销单</li>
+			<li><button class="choose">选择</button></li>
+			<input type="hidden" value="html/yuanshipingzheng1.html">
+		</ul>
+		<ul class="kind_body">
+			<li>通用原始凭证</li>
+			<li>全国通用的增值税专用发票</li>
+			<li><button class="choose">选择</button></li>
+			<input type="hidden" value="html/yuanshipingzheng2.html">
+		</ul>
+    
+  </body>
+</html>
